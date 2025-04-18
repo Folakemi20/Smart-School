@@ -1,12 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1 class="text-red-500">Hello</h1>
-</body>
+  </head>
+  <body>
+    <div class="lg:flex lg:flex-row w-full h-auto">
+      <!-- Dashboard section -->
+      <div
+        class="hidden lg:block bg-orange-400 w-[20%] fixed max-h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden"
+      >
+        <div
+          class="bg-white w-16 h-16 m-6 mx-auto border border-orange-300 rounded-full animate-pulse"
+        >
+          <h2
+            class="text-orange-400 font-bold text-[20px] mt-4 ml-2.5"
+            style="text-shadow: 2px 2px orange"
+          >
+            RWS
+          </h2>
+        </div>
+        <div class="text-center">
+          <h1
+            class="text-white text-[30px] font-semibold animate-bounce"
+            style="text-shadow: 2px 2px 2px black"
+          >
+            Right Wisdom <br />
+            School
+          </h1>
+        </div>
+        <div class="">
+          <div class="flex gap-3 justify-center mt-10 hover:scale-120 transition">
+            <div>
+              <img class="w-7 h-7 mt-2" src="./images/dashboard.png" alt="" />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[25px] font-semibold">Dashboard</h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 hover:scale-120 transition">
+            <div>
+              <img class="w-6 h-6 mt-1" src="./images/user (3).png" alt="" />
+            </div>
+            <div>
+              <a href="profile.html">
+                <h2 class="text-white text-[20px] font-semibold mt-1">
+                  Profile
+                </h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 ml-8 hover:scale-120 transition">
+            <div>
+              <img class="w-7 h-7 mt-1" src="./images/science.png" alt="" />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[20px] font-semibold mt-1">
+                  Attendance
+                </h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 ml-6 hover:scale-120 transition">
+            <div>
+              <img class="w-7 h-7 mt-2" src="./images/exam (1).png" alt="" />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[20px] font-semibold mt-1">
+                  Class Lists
+                </h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 hover:scale-120 transition">
+            <div>
+              <img class="w-7 h-7 mt-1" src="./images/teared-book.png" alt="" />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[20px] font-semibold mt-1">
+                  Subject
+                </h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 ml-6 hover:scale-120 transition">
+            <div>
+              <img
+                class="w-7 h-7 mt-1"
+                src="./images/class-timetable.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[20px] font-semibold mt-1">
+                  Timetable
+                </h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 mr-6 hover:scale-120 transition">
+            <div>
+              <img class="w-9 h-9 mt-1" src="./images/exam.png" alt="" />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[20px] font-semibold mt-1">Exam</h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 mr-2 hover:scale-120 transition">
+            <div>
+              <img class="w-9 h-9 mt-1" src="./images/score.png" alt="" />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[20px] font-semibold mt-1">
+                  Results
+                </h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-4 hover:scale-120 transition">
+            <div>
+              <img class="w-6 h-6 mt-1" src="./images/exit (1).png" alt="" />
+            </div>
+            <div>
+              <a href="#">
+                <h2 class="text-white text-[20px] font-semibold mt-1">
+                  Logout
+                </h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar section -->
+      <section
+        class="bg-orange-300 space-y-8 p-4 w-full h-[100%] lg:w-[80%] lg:ml-[20%]"
+      >
+        <div class="flex justify-between bg-white p-3 rounded-t-[5px]">
+          <div class="flex mt-1">
+            <div>
+              <img class="w-8 h-8" src="./images/protection.png" alt="" />
+            </div>
+            <div class="">
+              <h2 class="text-[20px] font-bold">Student</h2>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-between border border-orange-600 w-[50%] rounded-4xl py-2 px-2 lg:px-4"
+          >
+            <input class="outline-none" type="text" placeholder="Search..." />
+            <img class="w-4 h-4 mt-1" src="./images/search.png" alt="" />
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2">
+              <img class="w-5 h-5 mt-2 cursor-pointer animate-bounce" src="./images/mail.png" alt="" />
+              <img
+                class="w-5 h-5 mt-2 cursor-pointer animate-spin"
+                src="./images/notification.png"
+                alt=""
+              />
+            </div>
+
+            <div class="hidden lg:flex items-center gap-3">
+              <div>
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="./images/fantasy-domik-.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <h2 class="font-bold">Adenaike</h2>
+                <p>Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white h-[100%] rounded-b-[5px]">
+          <div class="flex flex-col lg:flex-row items-center  gap-4 p-4">
+            <div>
+              <div class="flex lg:m-6 m-12">
+                <h2 class="font-semibold animate-pulse">
+                  Welcome back,
+                  <h2 class="font-bold animate-pulse">Adenaike!</h2>
+                </h2>
+              </div>
+              <!-- Card section -->
+              <section class="flex flex-col lg:flex-row  gap-6 mt-5 lg:mt-60">
+                <div
+                  class="w-full lg:w-40 h-40  bg-orange-500 text-white rounded-[7px] shadow-md hover:shadow-md hover:scale-105 transition  flex flex-col justify-center"
+                >
+                  <div class="">
+                    <img
+                      class="w-10 h-10 mx-auto"
+                      src="./images/science.png"
+                      alt=""
+                    />
+                    <p class="text-center">Attendance</p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full lg:w-40 h-40 mx-auto bg-orange-500 text-white rounded-[7px] shadow-md hover:shadow-md hover:scale-105 transition p-4 flex flex-col justify-center"
+                >
+                  <div class="">
+                    <img
+                      class="w-10 h-10 mx-auto"
+                      src="./images/exam (1).png"
+                      alt=""
+                    />
+                    <p class="text-center">Class List</p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full lg:w-40 h-40 mx-auto bg-orange-500 text-white rounded-[7px] shadow-md hover:shadow-md hover:scale-105 transition p-4 flex flex-col justify-center"
+                >
+                  <div class="">
+                    <img
+                      class="w-10 h-10 mx-auto"
+                      src="./images/teared-book.png"
+                      alt=""
+                    />
+                    <p class="text-center">Subject</p>
+                  </div>
+                </div>
+              </section>
+              <section class="flex flex-col lg:flex-row mx-auto gap-6 mt-5 lg:mt-20">
+                <div
+                  class="w-full lg:w-40 h-40 mx-auto bg-orange-500 text-white rounded-[7px] shadow-md hover:shadow-md hover:scale-105 transition p-4 flex flex-col justify-center"
+                >
+                  <div class="">
+                    <img
+                      class="w-10 h-10 mx-auto"
+                      src="./images/class-timetable.png"
+                      alt=""
+                    />
+                    <p class="text-center">Timetable</p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full lg:w-40 h-40 mx-auto bg-orange-500 text-white rounded-[7px] shadow-md hover:shadow-md hover:scale-105 transition p-4 flex flex-col justify-center"
+                >
+                  <div class="">
+                    <img
+                      class="w-10 h-10 mx-auto"
+                      src="./images/exam.png"
+                      alt=""
+                    />
+                    <p class="text-center">Exam</p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full lg:w-40 h-40 mx-auto bg-orange-500 text-white rounded-[7px] shadow-md hover:shadow-md hover:scale-105 transition p-4 flex flex-col justify-center"
+                >
+                  <div class="">
+                    <img
+                      class="w-10 h-10 mx-auto"
+                      src="./images/score.png"
+                      alt=""
+                    />
+                    <p class="text-center">Results</p>
+                  </div>
+                </div>
+              </section>
+
+             
+            </div>
+
+            <!-- Calendar section -->
+            <section class="gap-4 mx-auto">
+              <div
+                class="bg-white mr-9 lg:mr-2 border-gray-50 rounded-xl shadow-sm hover:shadow-md  transition p-6"
+              >
+                <div class="gap-6">
+                  <h2 class="text-lg font-bold text-gray-800">Calendar</h2>
+                  <p class="text-gray-600 text-sm">April 2025</p>
+                </div>
+                <div>
+                  <table class="border-1">
+                    <thead>
+                      <tr class="bg-gray-200">
+                        <th class="border border-black p-2">Sun</th>
+                        <th class="border border-black p-2">Mon</th>
+                        <th class="border border-black p-2">Tue</th>
+                        <th class="border border-black p-2">Wed</th>
+                        <th class="border border-black p-2">Thurs</th>
+                        <th class="border border-black p-2">Fri</th>
+                        <th class="border border-black p-2">Sat</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="border border-black p-4 text-gray-400 hover:bg-blue-300 hover:text-white">
+                          30
+                        </td>
+                        <td class="border border-black p-4 text-gray-400  hover:bg-blue-300 hover:text-white">
+                          31
+                        </td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">1</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">2</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">3</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">4</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">5</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">6</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">7</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">8</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">9</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">10</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">11</td>
+                        <td
+                          class="bg-blue-700 text-white border border-black p-4  hover:bg-blue-300 hover:text-white"
+                        >
+                          12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">13</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">14</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">15</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">16</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">17</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">18</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">19</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">20</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">21</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">22</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">23</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">24</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">25</td>
+                        <td class="border border-black p-4  hover:bg-blue-300 hover:text-white">26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                 <!-- School Activity -->
+             <div class="mt-7 ">
+                <div>
+                    <h2 class="text-lg font-bold text-gray-800">School Activity</h2>
+                </div>
+                <div class="flex items-center gap-4 m-6">
+                    <div class="bg-gray-100 w-10 h-10 rounded-[2px]">
+                        <img class="w-4 h-4 m-3" src="./images/notification.png" alt="">
+                    </div>
+                    <div>
+                        <b>Eng- Vocabulary test</b>
+                        <p>All Wednesdays</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 m-6">
+                    <div class="bg-gray-100 w-10 h-10 rounded-[2px]">
+                        <img class="w-4 h-4 m-3" src="./images/notification.png" alt="">
+                    </div>
+                    <div>
+                        <b>Eng- Essay</b>
+                        <p>All Fridays</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 m-6">
+                    <div class="bg-gray-100 w-10 h-10 rounded-[2px]">
+                        <img class="w-4 h-4 m-3" src="./images/notification.png" alt="">
+                    </div>
+                    <div>
+                        <b>Eng- Speaking Class</b>
+                        <p>All Wednesdays</p>
+                    </div>
+                </div>
+               
+            </div>
+              </div>
+
+              
+            </section>
+
+            
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

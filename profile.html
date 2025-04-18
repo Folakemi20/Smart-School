@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Profile</title>
+</head>
+<body>
+    <div class="lg:flex lg:flex-row w-full h-auto">
+        <!-- Dashboard section -->
+        <div
+          class="hidden lg:block bg-orange-400 w-[20%] fixed max-h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden"
+        >
+          <div
+            class="bg-white w-16 h-16 m-6 mx-auto border border-orange-300 rounded-full"
+          >
+            <h2
+              class="text-orange-400 font-bold text-[20px] mt-4 ml-2.5"
+              style="text-shadow: 2px 2px orange"
+            >
+              RWS
+            </h2>
+          </div>
+          <div class="text-center">
+            <h1
+              class="text-white text-[30px] font-semibold"
+              style="text-shadow: 2px 2px 2px black"
+            >
+              Right Wisdom <br />
+              School
+            </h1>
+          </div>
+          <div class="">
+            <div class="flex gap-3 justify-center mt-10 hover:scale-120 transition">
+              <div>
+                <img class="w-7 h-7 mt-2" src="./images/dashboard.png" alt="" />
+              </div>
+              <div>
+                <a href="index.html">
+                  <h2 class="text-white text-[25px] font-semibold">Dashboard</h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 hover:scale-120 transition">
+              <div>
+                <img class="w-6 h-6 mt-1" src="./images/user (3).png" alt="" />
+              </div>
+              <div>
+                <a href="profile.html">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">
+                    Profile
+                  </h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 ml-8 hover:scale-120 transition">
+              <div>
+                <img class="w-7 h-7 mt-1" src="./images/science.png" alt="" />
+              </div>
+              <div>
+                <a href="#">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">
+                    Attendance
+                  </h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 ml-6 hover:scale-120 transition">
+              <div>
+                <img class="w-7 h-7 mt-2" src="./images/exam (1).png" alt="" />
+              </div>
+              <div>
+                <a href="#">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">
+                    Class Lists
+                  </h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 hover:scale-120 transition">
+              <div>
+                <img class="w-7 h-7 mt-1" src="./images/teared-book.png" alt="" />
+              </div>
+              <div>
+                <a href="#">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">
+                    Subject
+                  </h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 ml-6 hover:scale-120 transition">
+              <div>
+                <img
+                  class="w-7 h-7 mt-1"
+                  src="./images/class-timetable.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">
+                    Timetable
+                  </h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 mr-6 hover:scale-120 transition">
+              <div>
+                <img class="w-9 h-9 mt-1" src="./images/exam.png" alt="" />
+              </div>
+              <div>
+                <a href="#">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">Exam</h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 mr-2 hover:scale-120 transition">
+              <div>
+                <img class="w-9 h-9 mt-1" src="./images/score.png" alt="" />
+              </div>
+              <div>
+                <a href="#">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">
+                    Results
+                  </h2>
+                </a>
+              </div>
+            </div>
+  
+            <div class="flex gap-2 justify-center mt-4 hover:scale-120 transition">
+              <div>
+                <img class="w-6 h-6 mt-1" src="./images/exit (1).png" alt="" />
+              </div>
+              <div>
+                <a href="#">
+                  <h2 class="text-white text-[20px] font-semibold mt-1">
+                    Logout
+                  </h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar section -->
+        <section
+          class="bg-orange-300 space-y-8 p-4 w-full h-[100%] lg:w-[80%] lg:ml-[20%]"
+        >
+          <div class="flex justify-between bg-white p-3 rounded-t-[5px]">
+            <div class="flex mt-1">
+              <div>
+                <img class="w-8 h-8" src="./images/protection.png" alt="" />
+              </div>
+              <div class="">
+                <h2 class="text-[20px] font-bold">Student</h2>
+              </div>
+            </div>
+  
+            <div
+              class="flex items-center justify-between border border-orange-600 w-[50%] rounded-4xl py-2 px-2 lg:px-4"
+            >
+              <input class="outline-none" type="text" placeholder="Search..." />
+              <img class="w-4 h-4 mt-1" src="./images/search.png" alt="" />
+            </div>
+  
+            <div class="flex items-center gap-4">
+              <div class="flex items-center gap-2">
+                <img class="w-5 h-5 mt-2 cursor-pointer animate-bounce" src="./images/mail.png" alt="" />
+                <img
+                  class="w-5 h-5 mt-2 cursor-pointer animate-spin"
+                  src="./images/notification.png"
+                  alt=""
+                />
+              </div>
+  
+              <div class="hidden lg:flex items-center gap-3">
+                <div>
+                  <img
+                    class="w-12 h-12 rounded-full"
+                    src="./images/fantasy-domik-.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <h2 class="font-bold">Adenaike</h2>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white h-[100%] rounded-b-[5px]">
+           
+          </div>
+        </section>
+      </div>
+    
+</body>
+</html>
